@@ -1,1 +1,102 @@
+@font-face {
+  font-family: "Jumbox";
+  src: url(/fonts/Jumbox.eot?c69d9577dc915aefb50c07ff626661ef) format("truetype");
+}
+@font-face {
+  font-family: "Cairo";
+  src: url(/fonts/Cairo-Regular.ttf?64b7f6f903681ee8f2ef3b4d230b027b) format("truetype");
+}
+body {
+  font-family: "Cairo", "sans-serif" !important;
+}
 
+.footer-logo {
+  font-family: "Jumbox", "sans-serif" !important;
+  color: #0b609b;
+  font-weight: bold;
+  text-shadow: 0 0 4px #012e4e94;
+}
+
+.skills-btns-container,
+.portfolio-btns-container {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #eef0f2;
+  border: 1px solid #e4e4e4;
+  padding: 5px;
+  border-radius: 30px;
+}
+.skills-btns-container .btn-skill,
+.portfolio-btns-container .btn-skill {
+  text-transform: capitalize;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #5c6f81;
+  outline: 0;
+}
+.skills-btns-container .btn-skill:focus,
+.portfolio-btns-container .btn-skill:focus {
+  box-shadow: unset;
+}
+.skills-btns-container .btn-primary,
+.portfolio-btns-container .btn-primary {
+  color: #fff !important;
+  box-shadow: 0 0 6px #3490dc;
+  background-color: #2a5172;
+  background-image: linear-gradient(315deg, #2a5172 0%, #009ffd 74%);
+}
+.skills-btns-container .btn-primary:focus,
+.portfolio-btns-container .btn-primary:focus {
+  box-shadow: unset;
+}
+
+.skills-result-container,
+.portfolio-result-container {
+  width: 75%;
+}
+.skills-result-container .list-container,
+.portfolio-result-container .list-container {
+  list-style: none;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.skills-result-container .list-container li,
+.portfolio-result-container .list-container li {
+  background-color: #fff;
+  box-shadow: 0 0 6px #d0cdcd52;
+  font-size: 15px;
+  font-weight: bold;
+  width: 130px;
+  text-align: center;
+  height: 130px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.skills-result-container .list-container li img,
+.portfolio-result-container .list-container li img {
+  width: 55px;
+  height: 55px;
+}
+
+.contact-list {
+  list-style: none;
+}
+.contact-list li {
+  font-size: 30px;
+}
+.contact-list li:first-of-type > * {
+  color: #0077b5;
+}
+.contact-list li:nth-of-type(2) > * {
+  color: #333;
+}
+.contact-list li:nth-of-type(3) > * {
+  color: #1769ff;
+}
+.contact-list li:last-of-type > * {
+  color: #333;
+}

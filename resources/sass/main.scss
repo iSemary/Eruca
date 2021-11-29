@@ -1,3 +1,97 @@
+@font-face {
+    font-family: "Jumbox";
+    src: url("../../public/fonts/Jumbox.eot") format("truetype");
+}
+@font-face {
+    font-family: "Cairo";
+    src: url("../../public/fonts/Cairo-Regular.ttf") format("truetype");
+}
+
 body {
-    //background-color: red !important;
+    font-family: "Cairo", "sans-serif" !important;
+}
+.footer-logo {
+    font-family: "Jumbox", "sans-serif" !important;
+    color: #0b609b;
+    font-weight: bold;
+    text-shadow: 0 0 4px #012e4e94;
+}
+// Skills
+// Portfolio
+.skills-btns-container,
+.portfolio-btns-container {
+    margin: 0 auto;
+    width: fit-content;
+    background-color: #eef0f2;
+    border: 1px solid #e4e4e4;
+    padding: 5px;
+    border-radius: 30px;
+
+    .btn-skill {
+        text-transform: capitalize;
+        border-radius: 25px;
+        font-weight: bold;
+        color: #5c6f81;
+        outline: 0;
+        &:focus {
+            box-shadow: unset;
+        }
+    }
+    .btn-primary {
+        color: #fff !important;
+        box-shadow: 0 0 6px #3490dc;
+        background-color: #2a5172;
+        background-image: linear-gradient(315deg, #2a5172 0%, #009ffd 74%);
+        &:focus {
+            box-shadow: unset;
+        }
+    }
+}
+.skills-result-container,
+.portfolio-result-container {
+    width: 75%;
+
+    .list-container {
+        list-style: none;
+        margin: 0 auto;
+        width: fit-content;
+
+        li {
+            background-color: #fff;
+            box-shadow: 0 0 6px #d0cdcd52;
+            font-size: 15px;
+            font-weight: bold;
+            width: 130px;
+            text-align: center;
+            height: 130px;
+            border-radius: 9px;
+            cursor: pointer;
+            &:hover {
+                // box-shadow: 0 0 6px 0px #fc4b0da6;
+            }
+            img {
+                width: 55px;
+                height: 55px;
+            }
+        }
+    }
+}
+// Contact Us
+.contact-list {
+    list-style: none;
+    li {
+        font-size: 30px;
+        &:first-of-type > * {
+            color: #0077b5;
+        }
+        &:nth-of-type(2) > * {
+            color: #333;
+        }
+        &:nth-of-type(3) > * {
+            color: #1769ff;
+        }
+        &:last-of-type > * {
+            color: #333;
+        }
+    }
 }
