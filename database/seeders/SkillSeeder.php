@@ -21,49 +21,49 @@ class SkillSeeder extends Seeder
                 'type'=>'software',
                 'color'=>'#2F9FF2',
                 'started_at'=>'05-03-2014',
-        
+
             ],
             [
                 'name'=>'Illustrator',
                 'type'=>'software',
                 'color'=>'#F29200',
                 'started_at'=>'12-09-2014',
-        
+
             ],
             [
                 'name'=>'InDesign',
                 'type'=>'software',
                 'color'=>'#F23061',
                 'started_at'=>'23-12-2014',
-        
+
             ],
             [
                 'name'=>'After Effects',
                 'type'=>'software',
                 'color'=>'#C98BF2',
                 'started_at'=>'17-03-2015',
-        
+
             ],
             [
                 'name'=>'Premiere Pro',
                 'type'=>'software',
                 'color'=>'#9191F2',
                 'started_at'=>'16-07-2016',
-        
+
             ],
             [
                 'name'=>'HTML',
                 'type'=>'frontend',
                 'color'=>'#D84924',
                 'started_at'=>'10-09-2017',
-        
+
             ],
             [
                 'name'=>'CSS',
                 'type'=>'frontend',
                 'color'=>'#2E50D8',
                 'started_at'=>'03-10-2017',
-        
+
             ],
             [
                 'name'=>'JavaScript',
@@ -145,11 +145,17 @@ class SkillSeeder extends Seeder
             ],
             [
                 'name'=>'GraphQL',
-                'type'=>'tools',
+                'type'=>'backend',
                 'color'=>'#D932A2',
                 'started_at'=>'12-08-2021',
             ],
-            
+            [
+                'name'=>'Apollo',
+                'type'=>'frontend',
+                'color'=>'#132C48',
+                'started_at'=>'12-08-2021',
+            ],
+
         ]);
     }
 }

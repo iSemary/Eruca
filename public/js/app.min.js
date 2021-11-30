@@ -19984,7 +19984,8 @@ __webpack_require__.r(__webpack_exports__);
     return {
       skills: [],
       activeType: [],
-      types: []
+      types: [] // portfolios:[]
+
     };
   },
   mounted: function mounted() {

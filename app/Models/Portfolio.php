@@ -9,5 +9,7 @@ class Portfolio extends Model
 {
     use HasFactory;
 
-    protected $guarded = [''];
+    protected $fillable = ['name', 'title', 'description', 'thumbnail', 'website', 'type', 'skills_id', 'finished_at'];
+
+    protected $casts  = ['skills_id' => 'array'];
 }

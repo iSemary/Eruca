@@ -48,6 +48,7 @@ export default {
             skills: [],
             activeType: [],
             types: [],
+            // portfolios:[]
         };
     },
     mounted() {
