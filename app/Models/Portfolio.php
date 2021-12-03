@@ -12,4 +12,9 @@ class Portfolio extends Model
     protected $fillable = ['name', 'title', 'description', 'thumbnail', 'website', 'type', 'skills_id', 'finished_at'];
 
     protected $casts  = ['skills_id' => 'array'];
+
+
+    public function skill() {
+        return $this->belongsTo(Skill::class, 'skills_id');
+    }
 }

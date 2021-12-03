@@ -13,7 +13,7 @@
     <div id="app" class="container">
         <app></app>
     </div>
-    <script src="{{mix('/js/app.min.js')}}"></script>
+    <script src="{{mix('/js/main.min.js')}}"></script>
 </body>
 
 </html>

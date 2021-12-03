@@ -172,18 +172,18 @@ form {
     line-height: 2.65;
 }
 .form-group label {
-    color: #3f51b5;
+    color: #2a5172;
     font-weight: bold;
     font-size: 18px;
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #3f51b5c9;
+    color: #0b609b;
     font-weight: 0 !important;
 }
 .form-group input,
 .form-group textarea {
-    color: #3f51b5c9;
+    color: #0b609b;
     font-weight: bold;
 }
 .letter-img {

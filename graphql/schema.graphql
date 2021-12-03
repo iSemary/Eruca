@@ -6,14 +6,22 @@ type Portfolio {
     thumbnail: String!
     website: String
     type: String!
-    # Array [String]
-    skills_id: [String]!
+    skills_id: [String]! # Array [String]
     finished_at: String
     created_at: DateTime
 }
-
+type Skill {
+    id: ID!
+    name: String!
+    type: String!
+    color: String!
+    started_at: String
+}
 type Query {
     portfolio(id: ID! @eq): Portfolio @find
-    PortfolioSkillsQuery: Portfolio
+    PortfolioSkillsQuery: [Portfolio]! @all
     portfolios: [Portfolio]! @all
+
+    skill(id: ID! @eq): Skill @find
+    skills: [Skill]! @all
 }

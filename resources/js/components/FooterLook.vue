@@ -11,18 +11,6 @@
                 <h4 class="footer-logo">{{ this.$parent.APP_NAME }}</h4>
             </div>
             <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
                 <h5>Contact</h5>
                 <ul class="contact-list d-flex ps-0">
                     <li class="justify-center flex mx-2"><a href="https://www.linkedin.com/in/isemary/"><fa :icon="['fab', 'linkedin']"></fa></a></li>

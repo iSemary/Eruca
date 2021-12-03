@@ -12,6 +12,8 @@ class PortfolioSkillsQuery
      */
     public function __invoke($_, array $args)
     {
-        return Portfolio::where('id','4')->first();
+        
+        $portfolio = Portfolio::with('skills')->get();
+        return $portfolio;
     }
 }

@@ -2,20 +2,24 @@
     font-family: "Jumbox";
     src: url("../../public/fonts/Jumbox.eot") format("truetype");
 }
+
 @font-face {
     font-family: "Cairo";
     src: url("../../public/fonts/Cairo-Regular.ttf") format("truetype");
 }
-
+$mainColor: #0b609b;
+$mainColorDark: #2a5172;
 body {
     font-family: "Cairo", "sans-serif" !important;
 }
+
 .footer-logo {
     font-family: "Jumbox", "sans-serif" !important;
-    color: #0b609b;
+    color: $mainColor;
     font-weight: bold;
     text-shadow: 0 0 4px #012e4e94;
 }
+
 // Skills
 // Portfolio
 .skills-btns-container,
@@ -26,7 +30,6 @@ body {
     border: 1px solid #e4e4e4;
     padding: 5px;
     border-radius: 30px;
-
     .btn-skill {
         text-transform: capitalize;
         border-radius: 25px;
@@ -39,7 +42,7 @@ body {
     }
     .btn-primary {
         color: #fff !important;
-        box-shadow: 0 0 6px #3490dc;
+        box-shadow: 0 0 6px $mainColor;
         background-color: #2a5172;
         background-image: linear-gradient(315deg, #2a5172 0%, #009ffd 74%);
         &:focus {
@@ -47,15 +50,14 @@ body {
         }
     }
 }
+
 .skills-result-container,
 .portfolio-result-container {
     width: 75%;
-
     .list-container {
         list-style: none;
         margin: 0 auto;
         width: fit-content;
-
         li {
             background-color: #fff;
             box-shadow: 0 0 6px #d0cdcd52;
@@ -76,6 +78,27 @@ body {
         }
     }
 }
+
+.portfolio-result-container {
+    .list-container {
+        li {
+            // height: 350px;
+            height: fit-content;
+            width: 30%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 150px;
+            }
+            .project-details {
+                text-align: left;
+            }
+        }
+    }
+}
+.router-link {
+    text-decoration: none;
+}
 // Contact Us
 .contact-list {
     list-style: none;
@@ -94,4 +117,154 @@ body {
             color: #333;
         }
     }
+}
+.technology-used-container {
+    text-align: left;
+    span {
+        color: #fff !important;
+    }
+}
+.project-date {
+    font-style: italic;
+    text-align: left;
+    float: left;
+    fa {
+        color: red;
+    }
+}
+.apollo-spinner {
+    font-size: 180px;
+    color: $mainColor;
+}
+
+.nav-item {
+    font-size: 20px;
+    a {
+        color: $mainColor !important;
+        transition: all 0.5 ease-in-out;
+        &:hover {
+            font-weight: bold;
+            color: $mainColorDark;
+        }
+    }
+}
+
+// Toggle Light / Dark Mode
+// From Scratch
+$lightColor: #feaf41;
+$DarkColor: #c0c0c0;
+$lightColorShadow: #fedb41;
+$DarkColorShadow: #2b2b2b;
+.mode-container {
+    animation: DarkTheShadow 0.7s ease-in-out;
+    span {
+        cursor: pointer;
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: 26px;
+        box-shadow: 0 0 5px $lightColorShadow;
+        font-size: 20px;
+        font-weight: bold;
+        color: $lightColor;
+        position: relative;
+    }
+    img {
+        width: 30px;
+        position: relative;
+        animation: LightTheMode 0.7s ease-in-out;
+        animation-direction: alternate;
+        right: 0;
+    }
+    strong {
+        position: relative;
+        left: 0;
+        animation: LightTheModeText 0.7s ease-in-out;
+        animation-direction: alternate;
+        outline: unset;
+    }
+    .dark-mode {
+        box-shadow: 0 0 5px $DarkColor;
+        color: $DarkColor;
+        animation: LightTheShadow 0.7s ease-in-out;
+        img {
+            position: relative;
+            animation: DarkTheMode 0.7s ease-in-out;
+            animation-direction: alternate;
+            right: -45px;
+        }
+        strong {
+            left: -35px;
+            position: relative;
+            animation: DarkTheModeText 0.7s ease-in-out;
+            animation-direction: alternate;
+        }
+    }
+}
+@keyframes DarkTheMode {
+    from {
+        right: 0px;
+    }
+    to {
+        right: -45px;
+    }
+}
+@keyframes DarkTheShadow {
+    from {
+        box-shadow: 0 0 5px $lightColor;
+    }
+    to {
+        box-shadow: 0 0 5px $DarkColor;
+    }
+}
+@keyframes LightTheShadow {
+    from {
+        box-shadow: 0 0 5px $DarkColor;
+    }
+    to {
+        box-shadow: 0 0 5px $lightColor;
+    }
+}
+@keyframes DarkTheModeText {
+    from {
+        color: $lightColorShadow;
+        left: 0px;
+    }
+    to {
+        color: $DarkColor;
+        left: -35px;
+    }
+}
+@keyframes LightTheMode {
+    from {
+        right: -45px;
+    }
+    to {
+        right: 0;
+    }
+}
+@keyframes LightTheModeText {
+    from {
+        color: $DarkColor;
+        left: -35px;
+    }
+    to {
+        color: $lightColorShadow;
+        left: 0px;
+    }
+}
+// .mode-info {
+
+// }
+.title-name {
+    width: fit-content;
+    color: #0b609b;
+    background-color: #ffffff;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 51px;
+    box-shadow: inset 0 0 5px #0b609b, 0 0 5px #8eadc2;
+    margin: 6px auto;
+    font-weight: bold;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
 }

@@ -1,0 +1,11 @@
+query {
+    portfolios {
+        id
+        name
+        title
+        type
+        thumbnail
+        skills_id
+        finished_at
+    }
+}

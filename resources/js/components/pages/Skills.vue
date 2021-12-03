@@ -1,6 +1,6 @@
 <template>
     <div class="skills-container">
-        <h1>Skills</h1>
+        <h1 class="title-name">Skills</h1>
         <div class="skills-btns-container">
             <button
             @click="showSkillsType(type.name)"
