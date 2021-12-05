@@ -1,24 +1,26 @@
 <template>
     <div>
-        <button @click="updateCounter(1)" class="btn btn-success">Up</button>
-        <button @click="updateCounter(-1)" class="btn btn-success">Down</button>
-        <p id="Result">{{ count }}</p>
+       <p @click="increaceMe()">{{counter}}</p>
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            count: 0,
+            age:10,
+            imageSrc: "FDFDDF",
+            imageAlt: "dffddf",
+            counter:5
         };
     },
     methods: {
-        updateCounter(number) {
-            this.count += number;
+        sayMyName(){
+            return "Hello Semary" . this.age
         },
+        increaceMe(){
+            this.counter++
+        }
     },
-    created() {
-        this.count = 100;
-    },
+    created() {},
 };
 </script>

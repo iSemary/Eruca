@@ -14,7 +14,7 @@
                 </li>
                 <li class="nav-item">
                     <router-link :to="{ name: 'contact' }" class="nav-link"
-                        >Something</router-link
+                        >Contact</router-link
                     >
                 </li>
             </ul>
@@ -45,16 +45,6 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                    <router-link :to="{ name: 'skills' }" class="nav-link"
-                        >Something</router-link
-                    >
-                </li>
-                <li class="nav-item">
-                    <router-link :to="{ name: 'contact' }" class="nav-link"
-                        >Contact</router-link
-                    >
-                </li>
                 <li class="nav-item">
                     <div class="mode-container mt-2">
                         <span

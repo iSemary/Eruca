@@ -1,7 +1,7 @@
 <template>
     <div>
         <header-look/>
-        <router-view></router-view>
+        <router-view ></router-view>
         <footer-look />
     </div>
 </template>
@@ -10,7 +10,6 @@
 import HeaderLook from "./components/HeaderLook.vue";
 import FooterLook from "./components/FooterLook.vue";
 export default {
-    components: { HeaderLook },
     data() {
         let APP_NAME = process.env.MIX_APP_NAME;
         let APP_AUTHOR = process.env.MIX_APP_AUTHOR;

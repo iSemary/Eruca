@@ -210,7 +210,7 @@ $DarkColorShadow: #2b2b2b;
 }
 @keyframes DarkTheShadow {
     from {
-        box-shadow: 0 0 5px $lightColor;
+        box-shadow: 0 0 5px $lightColorShadow;
     }
     to {
         box-shadow: 0 0 5px $DarkColor;
@@ -221,12 +221,12 @@ $DarkColorShadow: #2b2b2b;
         box-shadow: 0 0 5px $DarkColor;
     }
     to {
-        box-shadow: 0 0 5px $lightColor;
+        box-shadow: 0 0 5px $lightColorShadow;
     }
 }
 @keyframes DarkTheModeText {
     from {
-        color: $lightColorShadow;
+        color: $lightColor;
         left: 0px;
     }
     to {
@@ -248,13 +248,10 @@ $DarkColorShadow: #2b2b2b;
         left: -35px;
     }
     to {
-        color: $lightColorShadow;
+        color: $lightColor;
         left: 0px;
     }
 }
-// .mode-info {
-
-// }
 .title-name {
     width: fit-content;
     color: #0b609b;

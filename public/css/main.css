@@ -228,7 +228,7 @@ body {
 }
 @-webkit-keyframes DarkTheShadow {
   from {
-    box-shadow: 0 0 5px #feaf41;
+    box-shadow: 0 0 5px #fedb41;
   }
   to {
     box-shadow: 0 0 5px #c0c0c0;
@@ -236,7 +236,7 @@ body {
 }
 @keyframes DarkTheShadow {
   from {
-    box-shadow: 0 0 5px #feaf41;
+    box-shadow: 0 0 5px #fedb41;
   }
   to {
     box-shadow: 0 0 5px #c0c0c0;
@@ -247,7 +247,7 @@ body {
     box-shadow: 0 0 5px #c0c0c0;
   }
   to {
-    box-shadow: 0 0 5px #feaf41;
+    box-shadow: 0 0 5px #fedb41;
   }
 }
 @keyframes LightTheShadow {
@@ -255,12 +255,12 @@ body {
     box-shadow: 0 0 5px #c0c0c0;
   }
   to {
-    box-shadow: 0 0 5px #feaf41;
+    box-shadow: 0 0 5px #fedb41;
   }
 }
 @-webkit-keyframes DarkTheModeText {
   from {
-    color: #fedb41;
+    color: #feaf41;
     left: 0px;
   }
   to {
@@ -270,7 +270,7 @@ body {
 }
 @keyframes DarkTheModeText {
   from {
-    color: #fedb41;
+    color: #feaf41;
     left: 0px;
   }
   to {
@@ -300,7 +300,7 @@ body {
     left: -35px;
   }
   to {
-    color: #fedb41;
+    color: #feaf41;
     left: 0px;
   }
 }
@@ -310,7 +310,7 @@ body {
     left: -35px;
   }
   to {
-    color: #fedb41;
+    color: #feaf41;
     left: 0px;
   }
 }
