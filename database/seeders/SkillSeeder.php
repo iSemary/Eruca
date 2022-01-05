@@ -155,6 +155,12 @@ class SkillSeeder extends Seeder
                 'color'=>'#132C48',
                 'started_at'=>'12-08-2021',
             ],
+            [
+                'name'=>'Gulp',
+                'type'=>'frontend',
+                'color'=>'#DB4446',
+                'started_at'=>'12-16-2021',
+            ],
 
         ]);
     }

@@ -20,7 +20,7 @@ Vue.component("fa", FontAwesomeIcon);
 
 const httpLink = new HttpLink({
     // URL to graphql server, you should use an absolute URL here
-    uri: "http://127.0.0.1:8000/graphql",
+    uri: process.env.MIX_APP_URL+"graphql",
 });
 // create the apollo client
 const apolloClient = new ApolloClient({

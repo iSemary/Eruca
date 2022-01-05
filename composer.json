@@ -8,11 +8,14 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "joselfonseca/lighthouse-graphql-passport-auth": "^6.0",
         "laravel/framework": "^8.65",
+        "laravel/passport": "^10.2",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
-        "nuwave/lighthouse": "^5.26"
+        "mll-lab/laravel-graphql-playground": "^2.5",
+        "nuwave/lighthouse": "^5.28"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

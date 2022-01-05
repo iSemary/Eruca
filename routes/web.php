@@ -15,6 +15,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/new', [WelcomeController::class, 'controllerMethod']);
 
 Route::view('/skills', 'welcome');
+Route::view('/login', 'welcome');
+Route::view('/home', 'welcome');
 
 // If there's no route match
-Route::any('{slug}', [WelcomeController::class, 'any']);
+Route::any('/{slug}', [WelcomeController::class, 'any']);

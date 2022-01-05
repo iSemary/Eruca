@@ -99,39 +99,40 @@
     </div>
 </template>
 <script>
-import gql from "graphql-tag";
-export default {
-    name: "portfolio",
-    data() {
-        return {
-            skills: [],
-            activeType: [],
-            types: [],
-            skills: [],
-        };
-    },
-    mounted() {
-        let types = [
-            { name: "Web Development" },
-            { name: "UI/UX" },
-            { name: "Design" },
-        ];
-        this.types = types;
-        this.activeType = "Web Development";
-    },
-    methods: {
-        PortfolioImagePath(thumbnail) {
-            return "/assets/portfolio/" + thumbnail;
+    import gql from "graphql-tag";
+
+    export default {
+        name: "portfolio",
+        data() {
+            return {
+                skills: [],
+                activeType: [],
+                types: [],
+                skills: [],
+            };
         },
-        showSkillsType(type) {
-            this.activeType = type;
+        mounted() {
+            let types = [
+                {name: "Web Development"},
+                {name: "UI/UX"},
+                {name: "Design"},
+            ];
+            this.types = types;
+            this.activeType = "Web Development";
         },
-        showPortfoliosType(type) {
-            this.activeType = type;
+        methods: {
+            PortfolioImagePath(thumbnail) {
+                return "/assets/portfolio/" + thumbnail;
+            },
+            showSkillsType(type) {
+                this.activeType = type;
+            },
+            showPortfoliosType(type) {
+                this.activeType = type;
+            },
         },
-    },
-    apollo: {
-        skills: gql`
+        apollo: {
+            skills: gql`
             {
                 skills {
                     id
@@ -141,6 +142,6 @@ export default {
                 }
             }
         `,
-    },
-};
+        },
+    };
 </script>

@@ -4,17 +4,20 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item active">
                     <router-link :to="{ name: 'skills' }" class="nav-link"
-                        >Skills</router-link
+                    >Skills
+                    </router-link
                     >
                 </li>
                 <li class="nav-item">
                     <router-link :to="{ name: 'portfolio' }" class="nav-link"
-                        >Portfolio</router-link
+                    >Portfolio
+                    </router-link
                     >
                 </li>
                 <li class="nav-item">
                     <router-link :to="{ name: 'contact' }" class="nav-link"
-                        >Contact</router-link
+                    >Contact
+                    </router-link
                     >
                 </li>
             </ul>
@@ -26,8 +29,7 @@
                     class="navbar-brand logo-navbar"
                     :to="{ name: 'welcome' }"
                 >
-                    <img :src="this.$parent.Logo_Svg" width="35px" alt="" />
-                    <!-- {{ this.$parent.APP_NAME }} -->
+                    <img :src="this.$parent.Logo_Svg" width="35px" alt=""/>
                 </router-link>
                 <button
                     class="navbar-toggler"
@@ -43,8 +45,11 @@
             </div>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <router-link :to="{name:'login'}" class="nav-link">Login</router-link>
+                </li>
                 <li class="nav-item">
                     <div class="mode-container mt-2">
                         <span
@@ -53,7 +58,7 @@
                             class="mode-info"
                             :class="{ 'dark-mode': modestyle }"
                         >
-                            <img :src="modesrc" />
+                            <img :src="modesrc"/>
                             <strong>{{ mode }}</strong>
                         </span>
                     </div>
@@ -63,38 +68,44 @@
     </nav>
 </template>
 <script>
-export default {
-    name: "HeaderLook",
-    data() {
-        return {
-            mode: [],
-            modesrc:[],
-            modestyle:false,
-            darkTheme: false,
-        };
-    },
-    mounted() {
-        this.mode = "Light";
-        this.modesrc = "/assets/sun.png";
-    },
-    methods: {
-        switchMode(mode) {
-            if (mode == "Light") {
-                this.mode = 'Dark'
-                this.modesrc = '/assets/moon.png'
-                this.modestyle = true
-                this.darkTheme = !this.darkTheme;
-             this.value = true
+import { onLogout } from "../vue-apollo.js";
 
-        } else {
-                this.mode = 'Light'
-                this.modesrc = '/assets/sun.png'
-                this.modestyle = false
-                this.darkTheme = !this.darkTheme;
-             this.value = false
-            }
+    export default {
+        name: "HeaderLook",
+        data() {
+            return {
+                mode: [],
+                modesrc: [],
+                modestyle: false,
+                darkTheme: false,
+            };
         },
+        mounted() {
+            this.mode = "Light";
+            this.modesrc = "/assets/sun.png";
+        },
+        methods: {
+            logout(){
+                onLogout(this.$apollo.provider.defaultClient)
+                this.$router.push('/')
+            },
+            switchMode(mode) {
+                if (mode == "Light") {
+                    this.mode = 'Dark'
+                    this.modesrc = '/assets/moon.png'
+                    this.modestyle = true
+                    this.darkTheme = !this.darkTheme;
+                    this.value = true
 
-    },
-};
+                } else {
+                    this.mode = 'Light'
+                    this.modesrc = '/assets/sun.png'
+                    this.modestyle = false
+                    this.darkTheme = !this.darkTheme;
+                    this.value = false
+                }
+            },
+
+        },
+    };
 </script>

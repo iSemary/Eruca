@@ -1,7 +1,7 @@
 <template>
     <div>
-        <header-look/>
-        <router-view ></router-view>
+        <header-look />
+        <router-view></router-view>
         <footer-look />
     </div>
 </template>
@@ -20,6 +20,6 @@ export default {
             Logo_Svg: "/assets/LOGO.svg",
             APP_URL: APP_URL,
         };
-    },
+    }
 };
 </script>

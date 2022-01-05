@@ -29,7 +29,7 @@ const Dotenv = require("dotenv-webpack");
         extensions: [".ts", ".tsx", ".js", ".jsx", ".scss", ".gql", ".graphql"],
         modules: ["/node_modules/"],
     },
-}),
+})
 // Fixed Error Render Graphql.gql
 mix.webpackConfig({
     module: {
