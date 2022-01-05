@@ -1,3 +1,7 @@
+<img src="favicon.png" width="50"/><span style="font-size:30px;"> Eruca | Dynamic Portfolio<span/>
+<br/>
+<img src="Preview.gif" width="500"/>
+
 ## Eruca
 ### Dynamic portfolio created by Laravel 8 & Vue 2.6
 
@@ -21,11 +25,11 @@
 - Passport
 - Laravel-graphql-playground
 - Lighthouse
-- Vue apollo
+- Vue Apollo
 - Vue router
+- Axios
 - FontAwesome
 - Html2Canvas
-
 
 <hr/>
 
@@ -65,4 +69,4 @@
 ```
 #### Testing
 
-> open: http://127.0.0.1:3000/
+> open: http://127.0.0.1:8000/

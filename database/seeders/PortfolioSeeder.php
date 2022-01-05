@@ -32,6 +32,16 @@ class PortfolioSeeder extends Seeder
                 'finished_at' => '11/4/2019',
             ],
             [
+                'name' => 'Musicoker',
+                'title' => 'Music player with a playlist and player control',
+                'description' => '',
+                'thumbnail' => 'controlkuwait.png',
+                'website' => 'https://github.com/iSemary/Musicoker',
+                'type' => 'Web Development',
+                'skills_id' => '[6,7,8,9,10,11,12]',
+                'finished_at' => '11/4/2019',
+            ],
+            [
                 'name' => 'WoodsGate',
                 'title' => '',
                 'description' => '',
