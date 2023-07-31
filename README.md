@@ -1,9 +1,16 @@
+# Eruca
+
+## Features
+
+- **Skills Page**
+- **Projects Page**
+- **Contact Page**
+
+## Preview
+
 <img src="favicon.png" width="50"/><span style="font-size:30px;"> Eruca | Dynamic Portfolio<span/>
 <br/>
 <img src="Preview.gif" width="500"/>
-
-## Eruca
-### Dynamic portfolio created by Laravel 8 & Vue 2.6
 
 
 ## Technologies Used
